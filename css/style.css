@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 4rem;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 70px;
+}
+
+h2 {
+    color: whitesmoke;
+}
+
+.blue {
+    color: #00f7ff;
+}
+
+.yellow {
+    color: gold;
+}
+
+/* estilo de nav */
+
+.goldBg {
+    background-color: gold;
+}
+
+
+/* empieza estilo de seccion de Inicio */
+
+.contenedorInicio {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.textoInicio {
+    color: whitesmoke;
+    margin: 2%;
+    text-align: center;
+}
+
+.tituloMessi {
+    color: whitesmoke;
+}
+
+.imagenes {
+    width: 95%;
+    height: 500px;
+    margin: 15px;
+}
+
+.bordesRedondeados {
+    border-radius: 2rem;
+}
+
+/* mq de desktop para seccion Inicio */
+
+@media screen and (min-width:1024px) {
+
+    .contenedorInicio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textoInicio {
+        text-align: right;
+        max-width: 600px;
+        font-size: large;
+    }
+}
+
+/* mq de big desktop para seccion Inicio */
+
+@media screen and (min-width:1200px) {
+    .contenedorInicio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textoInicio {
+        text-align: right;
+        max-width: 800px;
+        font-size: x-large;
+    }
+}
+
+
+/* empieza estilo de seccion de titulos */
+
+.titulos {
+    margin-top: 5%;
+}
+
+.imagenTituloColectivos {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.titulosColectivos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+}
+
+.imagenTituloIndividuales {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulosIndividuales {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+}
+
+.trofeos {
+    color: gold;
+}
+
+/* mq de tablet seccion Titulos */
+
+@media screen and (min-width:624px) {
+    .titulos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .imagenTituloColectivos , .imagenTituloIndividuales , .titulosColectivos , .titulosIndividuales {
+        width: 100%;
+    }
+
+    .titulosIndividuales {
+        flex-direction: column-reverse;
+    }
+}
+
+/* mq de desktop seccion titulos */
+
+@media screen and (min-width:1200px) {
+    .imagenTituloColectivos , .imagenTituloIndividuales , .titulosColectivos , .titulosIndividuales {
+        width: 80%;
+    }
+
+    .titulosColectivos , .titulosIndividuales {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: right;
+        align-items: center;
+        font-size: large;
+        margin-left: 80px;
+    }
+
+    .titulosIndividuales {
+        flex-direction: row-reverse;
+    }
+}
+
+/* empieza estilo de seccion de Seleccion Argentina */
+
+.messiDebutArgentina {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.messi2006 {
+    width: 500px;
+    height: 700px;
+}
+
+.infoMessi2006 , .datosMessiArgentina {
+    max-width: auto;
+    font-size: x-large;
+    padding: 50px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.formatoVideoGoles {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 1rem violet;
+    border-radius: 6rem;
+}
+
+.videoGoles {
+    width: 80%;
+    height: 400px;
+}
+
+.bordesRedondeadosVideo {
+    border-radius: 2rem;
+}
+
+.datosMessiArgentina ul li {
+    list-style-type: none;
+}
+
+.argentinaCampeona {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.messiConLaCopa {
+    width: 500px;
+    height: 500px;
+}
+
+.imagenArgentina {
+    width: 500px;
+    height: 500px;
+}
+
+/* mq de desktop para seccion Seleccion Argentina */
+
+@media screen and (min-width:1200px) {
+    .argentinaCampeona {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+
+}
+
+/* empieza estilo de galeria */
+
+.contenedorGaleria .col-lg-4 {
+    margin: 0 !important;
+    padding: 25px;
+}
+.contenedorGaleria img {
+    width: 100%;
+    height: 400px;
+}
+
+.contenedorGaleria img:hover {
+    border: 5px solid gold;
+}
+
+.formatoVideoGaleria {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-bottom: 20px;
+}
+
+/* mq de tablet para videos de seccion galeria */
+@media screen and (min-width:768px) {
+    .formatoVideoGaleria {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* empieza estilo de contacto */
+
+.formularioContacto {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.contenedorContacto {
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    background: rgb(36, 23, 94);
+    box-shadow: 0 0 1rem rgb(26, 10, 147);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.contenedorForm {
+    padding: 20px;
+}
+
+.contenedorForm h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.formContacto {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.formContacto input , .formContacto textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: rgb(32, 27, 53);
+    padding: 10px;
+    font-size: 0,9rem;
+    color: whitesmoke;
+    border-radius: 0.4rem;
+}
+
+.formContacto textarea {
+    resize: none;
+    height: 200px;
+}
+
+.formContacto .botonEnviar {
+    border: none;
+    outline: none;
+    background: gold;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.formContacto .botonEnviar:hover {
+    background: #00f7ff;
+    transition: 0.3s all linear;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* empieza edicion de responsive de seccion Contacto */
+
+@media (max-width:960px) {
+    .contenedorContacto {
+    margin: 0 auto;
+    width: 90%; 
+    }
+}
+
+@media (max-width:700px) {
+    .contenedorContacto {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .mapa iframe {
+        height: 500px;
+    }
+}
+
+
+/* empieza edicion de footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.parrafo {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.social-icons {
+    text-align: right;
+    flex-grow: 1;
+    font-size: 50px;
+    width: 30px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: #d2d20a;
+}

@@ -1,0 +1,68 @@
+//importar variables
+@import "../base/mixin";
+
+//empieza edicion de page titulos
+
+.titulos{
+    margin-top: 5%;
+    .titulosColectivos{
+        @include flexCenter;
+        flex-direction: column-reverse;
+        color: tomato;
+        .imagenTituloColectivos{
+        @include estiloImagenesTitulos;
+        }
+        .trofeos {
+            color: gold;
+        }
+    }
+    .titulosIndividuales{
+        @include flexCenter;
+        flex-direction: column-reverse;
+        color: tomato;
+        .imagenTituloIndividuales{
+        @include estiloImagenesTitulos;
+        }
+        .trofeos {
+            color: gold;
+        }
+    }
+}
+
+/* mq de tablet seccion Titulos */
+
+@media screen and (min-width:624px){
+    .titulos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        .imagenTituloColectivos , .imagenTituloIndividuales , .titulosColectivos , .titulosIndividuales {
+            width: 100%;
+        }
+        .titulosIndividuales {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+/* mq de desktop seccion titulos */
+
+@media screen and (min-width:1200px) {
+    .titulos{
+        .imagenTituloColectivos, .imagenTituloIndividuales, .titulosColectivos, .titulosIndividuales {
+            width: 80%;
+        }
+        .titulosColectivos , .titulosIndividuales {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: right;
+            align-items: center;
+            font-size: large;
+            margin-left: 80px;
+        }
+        .titulosIndividuales {
+            flex-direction: row-reverse;
+        }
+    }
+}

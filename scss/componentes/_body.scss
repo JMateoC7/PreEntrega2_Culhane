@@ -1,0 +1,15 @@
+// importar variables
+@import "../base/extend";
+
+// empieza edicion para el body de todas las pages
+
+body {
+    @extend %estiloH;
+    background-color: black;
+    .blue {
+        color: #00f7ff;
+    }
+    .yellow {
+        color: gold;
+    }
+}

@@ -1,0 +1,39 @@
+.contenedorGaleria{
+    .col-lg-4{
+        margin: 0 !important;
+        padding: 25px;
+    }
+    img{
+        width: 100%;
+        height: 400px;
+    }
+    img:hover{
+        border: 5px solid gold;
+    }
+    .bordesRedondeados{
+        border-radius: 2rem;
+    }
+}
+
+.botonGaleria{
+        text-align: center;
+    }
+
+.formatoVideoGaleria{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    .videoGaleria{
+        width: 100%;
+        border-radius: 2rem;
+    }
+}
+
+/* mq de tablet para videos de seccion galeria */
+@media screen and (min-width:768px) {
+    .formatoVideoGaleria {
+        display: flex;
+        flex-direction: row;
+    }
+}

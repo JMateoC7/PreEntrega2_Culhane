@@ -1,0 +1,49 @@
+//importar variables
+@import "../base/mixin";
+
+//edicion de page Inicio
+
+.contenedorInicio{ 
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    .imagenes {
+        width: 95%;
+        height: 500px;
+        margin: 15px;
+        border-radius: 2rem;
+    }
+    .textoInicio {
+        color: whitesmoke;
+        margin: 2%;
+        text-align: center;
+    }
+}
+
+/* mq de desktop para seccion Inicio */
+@media screen and (min-width:1024px) {
+    .contenedorInicio {
+        @include flexCenter;
+        flex-direction: row;
+    }
+    .textoInicio {
+        text-align: right;
+        max-width: 600px;
+        font-size: large;
+    }
+}
+
+/* mq de big desktop para seccion Inicio */
+@media screen and (min-width:1200px) {
+    .contenedorInicio {
+        @include flexCenter;
+        flex-direction: row;
+    }
+    .textoInicio {
+        text-align: right;
+        max-width: 800px;
+        font-size: x-large;
+    }
+}
+
+

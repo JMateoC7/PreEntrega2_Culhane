@@ -1,0 +1,32 @@
+//import
+
+/* reset */
+@import "componentes/reset";
+
+
+@import "componentes/body";
+
+/* color de la nav */
+header{
+    .goldBg {
+        background-color: gold;
+    }
+}
+
+/* edicion de pagina Inicio */
+@import "componentes/home";
+
+/* edicion de pagina de titulos */
+@import "componentes/titles";
+
+/* edicion de pagina de Sel. Argentina */
+@import "componentes/sel_argentina";
+
+/*edicion de pagina de galeria */
+@import "componentes/galeria";
+
+/*edicion de pagina de contacto */
+@import "componentes/contacto";
+
+/* edicion de footer */
+@import "componentes/footer";

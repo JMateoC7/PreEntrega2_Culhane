@@ -15,9 +15,24 @@
     }
 }
 
-.botonGaleria{
-        text-align: center;
+.botonGaleria1{
+        font-size: xx-large;
+        color: whitesmoke;
     }
+
+.rotate-center {
+    animation: rotate-center 0.4s;
+}
+
+@keyframes rotate-center {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
 
 .formatoVideoGaleria{
     display: flex;

@@ -199,8 +199,18 @@ header .goldBg {
 .contenedorGaleria .bordesRedondeados {
   border-radius: 2rem; }
 
-.botonGaleria {
-  text-align: center; }
+.botonGaleria1 {
+  font-size: xx-large;
+  color: whitesmoke; }
+
+.rotate-center {
+  animation: rotate-center 0.4s; }
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
 
 .formatoVideoGaleria {
   display: flex;
@@ -291,7 +301,7 @@ header .goldBg {
 
 /* edicion de footer */
 footer {
-  background-color: #333;
+  background-color: #090232;
   color: white;
   text-align: center;
   padding: 10px;
@@ -308,4 +318,4 @@ footer {
     width: 30px; }
   footer .social-icons a {
     margin-right: 15px;
-    color: #d2d20a; }
+    color: gold; }
